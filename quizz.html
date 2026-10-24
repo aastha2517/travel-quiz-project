@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Quizz</title>
+</head>
+
+<body class="hero-img">
+
+    <!-- header -->
+    <header class="position-absolute w-100">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <div class="col-12">
+                        <div class="header text-light d-flex justify-content-between py-3 align-items-center">
+                            <div class="col-2">
+                                <div class="logo">
+                                    <h2 class="fs-3 fw-semibold">Travely</h2>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <ul
+                                    class="d-flex p-0 justify-content-between align-items-center list-unstyled fs-6 fw-medium">
+                                    <li>Home</li>
+                                    <li>Explore Quizze</li>
+                                    <li>Leaderboard</li>
+                                    <li>About</li>
+                                </ul>
+                            </div>
+                            <div class="col-1">
+                                <div class="nav-icons d-flex justify-content-around ">
+                                    <p><i class="ri-search-line fs-5 fw-medium"></i></p>
+                                    <p><i class="ri-user-line fs-5 fw-medium"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- detail section -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="quizz-sec">
+                            <div class="col-6" id="quizz-sec">
+                                <div class="quizz-content position-absolute start-25  text-light  ">
+                                    <h3 class="pb-3" id="dynamic-title">World Landmrk challenge</h3>
+                                    <p class="m-0" id="dynamic-desc">From ancient wonders to modern icons, challenge
+                                        yourself with
+                                        questions </p>
+                                    <p>about the world's most fascinating and destinations.</p>
+                                    <div class="quizz-details gap-4 d-flex">
+                                        <button class="rounded-pill fw-semibold px-3 py-1 btn btn-outline-light "><span><i
+                                                    class="ri-calendar-2-fill fs-5 pe-2 fw-semibold"></i></span>10
+                                            Questions</button>
+
+                                        <button class="rounded-pill fw-semibold px-3 py-1 btn btn-outline-light"><span><i
+                                                    class="ri-time-line fs-5 pe-2 fw-semibold"></i></span>10
+                                            min</button>
+
+                                        <button class="rounded-pill fw-semibold px-3 py-1 btn btn-outline-light"
+                                            id="level"><span><i
+                                                    class="ri-bar-chart-fill fs-5 pe-2 fw-semibold"></i></span>Medium</button>
+                                    </div>
+                                    <div class="col-12" id="details-sec">
+                                        <div class="term-condition pt-4 d-flex align-items-center ">
+                                            <div
+                                                class="check border bg-light rounded-circle d-flex justify-content-center align-items-center ">
+                                                <span><i class="ri-shield-check-line text-dark fw-semibold"></i></span>
+                                            </div>
+                                            <p class="ps-3 m-0">Participate honestly and do not use unfair methods.</p>
+                                        </div>
+                                        <div class="term-condition pt-3 d-flex align-items-center">
+                                            <div
+                                                class="check border bg-light rounded-circle d-flex justify-content-center align-items-center">
+                                                <span><i class="ri-timer-line text-dark fw-semibold"></i></span>
+                                            </div>
+                                            <p class="ps-3 m-0">Complete each quiz within the given time.</p>
+                                        </div>
+                                        <div class="term-condition pt-3 d-flex align-items-center">
+                                            <div
+                                                class="check border bg-light rounded-circle d-flex justify-content-center align-items-center">
+                                                <span><i class="ri-bar-chart-line text-dark fw-semibold"></i></span>
+                                            </div>
+                                            <p class="ps-3 m-0">Points are awarded based on correct answers.</p>
+                                        </div>
+                                        <div class="term-condition pt-3 d-flex align-items-center">
+                                            <div
+                                                class="check border bg-light rounded-circle d-flex justify-content-center align-items-center">
+                                                <span><i class="ri-trophy-line text-dark fw-semibold"></i></span>
+                                            </div>
+                                            <p class="ps-3 m-0">Rankings are based on scores and completion time.</p>
+                                        </div>
+                                        <div class="term-condition pt-3 d-flex align-items-center">
+                                            <div
+                                                class="check border bg-light rounded-circle d-flex justify-content-center align-items-center">
+                                                <span><i class="ri-file-list-3-line text-dark fw-semibold"></i></span>
+                                            </div>
+                                            <p class="ps-3 m-0">Follow all rules provided for each competition.</p>
+                                        </div>
+                                        <div class="start-btn mt-4">
+                                            <button class="btn btn-outline-light rounded-pill px-4 fw-semibold py-1"
+                                                id="start-quizz">Start
+                                                Quiz</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- question section -->
+        <section id="question-sec" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="questions-box  text-light d-flex justify-content-between " >
+                            <div class="col-8" >
+                                <div class="questions-card shadow-lg p-4 rounded-4 shadow-lg">
+                                    <div class="count-down justify-content-between d-flex">
+                                        <div class="pogress w-100 mb-4">
+                                            <p>QUESTION <span id="que-num">03</span> / <span id="total-que">10</span>
+                                            </p>
+                                            <div class="progress " role="progressbar" aria-label="Basic example"
+                                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"
+                                                style="height: 7px">
+                                                <div class="progress-bar" id="progressBar"></div>
+                                            </div>
+                                        </div>
+                                        <div class="timer">
+                                            <span
+                                                class="badge rounded-pill fw-semibold px-3 py-1 border-0 bg-light text-dark">
+                                                00:42
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="question border border-light p-4 rounded-4 text-center">
+                                            <h4 class="mb-4" id="question"><span id="que-num pe-3">1</span>Which city is
+                                                home to the famous Colosseum?
+                                            </h4>
+                                            <div class="option d-flex flex-wrap row-gap-4 justify-content-between">
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 d-flex justify-content-between mt-3">
+                                        <div class="col-3">
+                                            <button class="btn btn-light px-4" id="previous-btn">Previous</button>
+                                        </div>
+                                        <div class="col-2 d-flex justify-content-end justify-content-between">
+                                            <button class="btn btn-light px-5" id="next-btn">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 bg-warning">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- score section -->
+        <section id="score-sec" class="d-none">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="score">
+                            <div class="col-6 mx-auto">
+                                <div class="quiz-completed text-center text-light py-3 rounded-4 shadow-lg">
+                                    <div
+                                        class="trophy rounded-circle  d-flex justify-content-center align-items-center mx-auto">
+                                        <span><i class="ri-trophy-fill fs-3 text-warning"></i></span>
+                                    </div>
+                                    <h4>Quiz Completed!</h4>
+                                    <p class="m-0">Great job! You've finished the quiz.</p>
+                                    <p>Here's your result:</p>
+
+                                    <div>
+                                        <div class="score-bar border-5 border-light border rounded-circle mb-3 mx-auto">
+                                        </div>
+
+
+                                        <span class="m-0 px-3 py-1 border rounded-pill"><i
+                                                class="ri-star-fill pe-2 text-warning"></i>Good Performance</span>
+                                    </div>
+
+                                    <div class="col-12 d-flex flex-wrap">
+                                        <div class="col-3 px-3">
+                                            <div class="score-info-card p-3 rounded-4 my-4">
+                                                <div
+                                                    class="score-icon border-success bg-success rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2">
+                                                    <span><i class="ri-check-line text-light fw-semibold"></i></span>
+                                                </div>
+                                                <p class="m-0 pb-1">5</p>
+                                                <p class="text-light fw-semibold m-0">Correct</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-3">
+                                            <div class="score-info-card p-3 rounded-4 my-4">
+                                                <div
+                                                    class="score-icon border-danger bg-danger rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2">
+                                                    <span><i class="ri-close-line text-light fw-semibold"></i></span>
+                                                </div>
+                                                <p class="m-0 pb-1">5</p>
+                                                <p class="text-light fw-semibold m-0">wrong</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-2">
+                                            <div class="score-info-card p-3 rounded-4 my-4">
+                                                <div
+                                                    class="score-icon border-primary bg-primary rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2">
+                                                    <span><i class="ri-article-line text-light fw-semibold"></i></span>
+                                                </div>
+                                                <p class="m-0 pb-1">10</p>
+                                                <p class="text-light fw-semibold m-0 ">Total Questions</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-3">
+                                            <div class="score-info-card p-3 rounded-4 my-4">
+                                                <div
+                                                    class="score-icon border-warning bg-warning rounded-circle d-flex justify-content-center align-items-center mx-auto mb-2">
+                                                    <span><i class="ri-timer-line text-light fw-semibold"></i></span>
+                                                </div>
+                                                <p class="m-0 pb-1">7:42</p>
+                                                <p class="text-light fw-semibold m-0">Time Taken</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <p>Well done! Keep exploring, keep learning! <span><i
+                                                class="ri-triangle-fill text-success"></i></span></p>
+
+                                    <div class="col-12 d-flex justify-content-between mt-3 px-3">
+                                        <button class="btn btn-outline-light px-4">Try Again</button>
+                                        <button class="btn btn-outline-light"></i></span>Explore Categories</button>
+                                        <!-- <div class="col-3">
+                            </div>
+                            <div class="col-4 d-flex justify-content-end justify-content-between">
+                            </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/quiz.js"></script>
+
+</body>
+
+</html>

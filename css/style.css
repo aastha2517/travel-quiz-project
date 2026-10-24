@@ -1,0 +1,90 @@
+
+.hero-img,.card,.how-img{
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.65) 0%,rgba(0, 0, 0, 0.35) 45%,rgba(0, 0, 0, 0.05) 100%),linear-gradient(to bottom,rgba(0, 0, 0, 0.25) 0%,transparent 30%,rgba(0, 0, 0, 0.15) 100%),url(../images/hero-img.jpg);
+    height: 727px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-title h2,.how-content h3{
+    font-size: 60px;
+}
+
+.card{
+    background-image:linear-gradient(to top, rgba(10, 20, 30, 0.95) 0%, rgba(10, 20, 30, 0.7) 50%, rgba(0,0,0,0) 100%),url(../images/hero-img.jpg);
+}
+
+.card-subtitle,.subtitle{
+    font-size: 13px;
+}
+
+.card-text,.score-info-card p:last-child{
+    font-size: 14px;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+}
+
+.card{
+    transition: transform 0.4s ease;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+.how-img{
+    background-image: url(../images/how-img.jpg);
+}
+
+.how-content p:first-child{
+    letter-spacing: 3px;
+}
+
+.banner-content{
+    background: linear-gradient(135deg, #4e4376 0%, #2b5876 100%);
+}
+
+.email-arrow,.check{
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Quizzz */
+
+.quizz-content{
+    padding-top: 8%;
+}
+
+.questions-box{
+    margin-top: 24%;
+}
+
+.questions-card , .trophy , .score-info-card{
+    background-color: #254d5d91 ;
+}
+
+.questions-card , .quiz-completed , .trophy , .score-info-card{
+    border: 2px solid #5c94ab;
+}
+
+.trophy{
+    width: 50px;
+    height: 50px;
+}
+
+.score-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.score-bar{
+    width: 130px;
+    height: 130px;
+}
+

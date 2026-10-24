@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- remix icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header class="position-absolute w-100">
+        <div class="container">
+            <div class="row">
+                <nav>
+                    <div class="col-12">
+                        <div class="header text-light d-flex justify-content-between py-3 align-items-center">
+                            <div class="col-2">
+                                <div class="logo">
+                                    <h2 class="fs-3 fw-semibold">Travely</h2>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <ul
+                                    class="d-flex p-0 justify-content-between align-items-center list-unstyled fs-6 fw-medium">
+                                    <li>Home</li>
+                                    <li>Explore Quizze</li>
+                                    <li>Leaderboard</li>
+                                    <li>About</li>
+                                </ul>
+                            </div>
+                            <div class="col-1">
+                                <div class="nav-icons d-flex justify-content-around ">
+                                    <p><i class="ri-search-line fs-5 fw-medium"></i></p>
+                                    <p><i class="ri-user-line fs-5 fw-medium"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- hero section -->
+        <section class="hero-img">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-sec">
+                            <div class="col-6">
+                                <div
+                                    class="hero-content position-absolute top-50 start-50 translate-middle text-light text-center">
+                                    <div class=" d-flex gap-4 justify-content-center mb-2">
+                                        <span class="m-0">TRAVEL</span>
+                                        <span class="m-0">LEARN</span>
+                                        <span class="m-0">COMPETE</span>
+                                    </div>
+                                    <div class="hero-title ">
+                                        <h2>Explore the World.</h2>
+                                        <h2 class="mb-4">Test Your Knowledge.</h2>
+                                        <p class="mb-1">Explore amazing destinations, discover world cultures, and
+                                            challenge yourself with exciting travel quizzes.</p>
+                                        <p class="mb-4"> Learn something new with every question and compete with
+                                            explorers around the world!</p>
+                                    </div>
+                                    <div class="hero-btn">
+                                        <button class="btn btn-light mx-4 px-5">Start Quiz</button>
+                                        <button class="btn btn-outline-light px-4">Explore Quizzes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- category section -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="destinations my-5 d-flex flex-wrap row-gap-4 text-dark">
+                            <div class="col-12">
+                                <div class="destination-content text-center">
+                                    <h3>Discover Amazing Destinations Through Quizzes</h3>
+                                    <p class="m-0">Choose a category, pick a destination and test your travel knowledge.
+                                    </p>
+                                    <p>Every quiz is a new adventure!</p>
+                                </div>
+                            </div>
+                            <div class="col-4 px-3">
+                                <div class="card shadow-lg rounded-4 border" style="height: 300px">
+                                    <div class="card-body text-light py-3 d-flex flex-column justify-content-end">
+                                        <h6 class="card-subtitle mb-2 text-secondary pb-2">GEOGRAPHY</h6>
+                                        <h5 class="card-title pb-1">Island Explorer</h5>
+                                        <div class="col-6 ">
+                                            <p class="card-text text-secondary">Explore beautiful islands, oceans and
+                                                natural wonders.</p>
+                                        </div>
+                                        <div class="card-bottom d-flex justify-content-between align-items-center pt-3">
+                                            <p>10 Questions</p>
+                                            <a href="./quizz.html?id=1" class="text-decoration-none">
+                                                <div
+                                                    class="circle rounded-circle d-flex justify-content-center align-items-center border border-light ">
+                                                    <span><i class="ri-arrow-right-line text-light fs-4"></i></span>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 px-3">
+                                <div class="card shadow-lg rounded-4 border" style="height: 300px">
+                                    <div class="card-body text-light py-3 d-flex flex-column justify-content-end">
+                                        <h6 class="card-subtitle mb-2 text-secondary pb-2">LANDMARKS</h6>
+                                        <h5 class="card-title pb-1">World Landmarks</h5>
+                                        <div class="col-7 ">
+                                            <p class="card-text text-secondary">From iconic structures to hidden
+                                                gems,explore famous places.</p>
+                                        </div>
+                                        <div class="card-bottom d-flex justify-content-between align-items-center pt-3">
+                                            <p>10 Questions</p>
+                                            <a href="./quizz.html?id=2" class="text-decoration-none">
+                                                <div
+                                                    class="circle rounded-circle d-flex justify-content-center align-items-center border border-light ">
+                                                    <span><i class="ri-arrow-right-line text-light fs-4"></i></span>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 px-3">
+                                <div class="card shadow-lg rounded-4 border" style="height: 300px">
+                                    <div class="card-body text-light py-3 d-flex flex-column justify-content-end">
+                                        <h6 class="card-subtitle mb-2 text-secondary pb-2">CULTURE</h6>
+                                        <h5 class="card-title pb-1">Food Around the World</h5>
+                                        <div class="col-7 ">
+                                            <p class="card-text text-secondary">Taste different cultures through their
+                                                unique cuisines.</p>
+                                        </div>
+                                        <div class="card-bottom d-flex justify-content-between align-items-center pt-3">
+                                            <p>10 Questions</p>
+                                            <a href="./quizz.html?id=3" class="text-decoration-none">
+                                                <div
+                                                    class="circle rounded-circle d-flex justify-content-center align-items-center border border-light ">
+                                                    <span><i class="ri-arrow-right-line text-light fs-4"></i></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 px-3">
+                                <div class="card shadow-lg rounded-4 border" style="height: 300px">
+                                    <div class="card-body text-light py-3 d-flex flex-column justify-content-end">
+                                        <h6 class="card-subtitle mb-2 text-secondary pb-2">NATURE</h6>
+                                        <h5 class="card-title pb-1">Mountains & Nature</h5>
+                                        <div class="col-7 ">
+                                            <p class="card-text text-secondary">Discover breathtaking landscapes,
+                                                wildlife and natural beauty.</p>
+                                        </div>
+                                        <div class="card-bottom d-flex justify-content-between align-items-center pt-3">
+                                            <p>10 Questions</p>
+                                            <a href="./quizz.html?id=4" class="text-decoration-none">
+                                                <div
+                                                    class="circle rounded-circle d-flex justify-content-center align-items-center border border-light ">
+                                                    <span><i class="ri-arrow-right-line text-light fs-4"></i></span>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 px-3">
+                                <div class="card shadow-lg rounded-4 border" style="height: 300px">
+                                    <div class="card-body text-light py-3 d-flex flex-column justify-content-end">
+                                        <h6 class="card-subtitle mb-2 text-secondary pb-2">HISTORY</h6>
+                                        <h5 class="card-title pb-1">History & Culture</h5>
+                                        <div class="col-7">
+                                            <p class="card-text text-secondary">Uncover the stories, traditions and
+                                                heritage of the world.</p>
+                                        </div>
+                                        <div class="card-bottom d-flex justify-content-between align-items-center pt-3">
+                                            <p>10 Questions</p>
+                                            <a href="./quizz.html?id=5" class="text-decoration-none">
+                                                <div
+                                                    class="circle rounded-circle d-flex justify-content-center align-items-center border border-light ">
+                                                    <span><i class="ri-arrow-right-line text-light fs-4"></i></span>
+                                                </div>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4 px-3">
+                                <div class="card shadow-lg rounded-4 border" style="height: 300px">
+                                    <div class="card-body text-light py-3 d-flex flex-column justify-content-end">
+                                        <h6 class="card-subtitle mb-2 text-secondary pb-2">COUNTRIES</h6>
+                                        <h5 class="card-title pb-1">Guess the Country</h5>
+                                        <div class="col-6 ">
+                                            <p class="card-text text-secondary">Look at the clues and find the right
+                                                country. </p>
+                                        </div>
+                                        <div class="card-bottom d-flex justify-content-between align-items-center pt-3">
+                                            <p>10 Questions</p>
+                                            <a href="./quizz.html?id=6" class="text-decoration-none">
+                                                <div
+                                                    class="circle rounded-circle d-flex justify-content-center align-items-center border border-light ">
+                                                    <span><i class="ri-arrow-right-line text-light fs-4"></i></span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- how it work section -->
+        <section class="how-img position-relative">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="how-it-woks text-light">
+                            <div class="col-6 d-flex justify-content-center mx-auto">
+                                <div class="how-content  text-center">
+                                    <p class="mt-5 pt-5 mb-0 subtitle">SIMPLE STEPS BIG ADVENTURES</p>
+                                    <h3>How it Works</h3>
+                                    <p>From choosing your destination to answering challenging questions, every step
+                                        brings you closer to becoming a true travel quiz champion.</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="steps d-flex  justify-content-around align-items-center rounded-4  mt-5">
+                                    <div class="col-3  p-4">
+                                        <div class="steps-card border rounded-4 border-2">
+                                            <div class="steps-img ratio ratio-4x3 overflow-hidden">
+                                                <img src="./images/destination.png" alt="" class="w-100 h-100 p-2">
+                                            </div>
+                                            <div class="steps-desc text-center">
+                                                <h3 class="fs-5 fw-semibold ">Choose your Destination</h3>
+                                                <p>Pick a quiz category and start your adventure.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-3 p-4 ">
+                                        <div class="staps-card border rounded-4 border-2">
+                                            <div class="steps-img ratio ratio-4x3 overflow-hidden">
+                                                <img src="./images/timer.png" alt="" class="w-100 h-100">
+                                            </div>
+                                            <div class="steps-desc text-center">
+                                                <h3 class="fs-5 fw-semibold pt-2">Beat the clock</h3>
+                                                <p>Answer exciting questions before the timer runs out.</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-3 p-4">
+                                        <div class="steps-card border rounded-4 border-2">
+                                            <div class="steps-img ratio ratio-4x3 overflow-hidden">
+                                                <img src="./images/trophy.png" alt="" class="w-100 h-100">
+                                            </div>
+                                            <div class="steps-desc text-center">
+                                                <h3 class="fs-5 fw-semibold ">Earn Points</h3>
+                                                <p>score points,unlock badges and climb the Leaderboard.</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- banner section -->
+        <section class="bg-light">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="banner">
+                            <div class="col-12">
+                                <div class="banner-content p-5 text-center text-light rounded-4">
+                                    <h3>Discover Amazing Destinations Through Quizzes</h3>
+                                    <p class="m-0">Choose a category, pick a destination and test your travel
+                                        knowledge.
+                                    </p>
+                                    <p>Every quiz is a new adventure!</p>
+                                    <button class="btn btn-outline-light rounded-pill">Join the Competition</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer d-flex justify-content-between my-5">
+                        <div class="col-2">
+                            <div class="logo">
+                                <h2 class="fs-3 fw-semibold">Travely</h2>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <p>Stay in the loop</p>
+                            <p>Get notified about new quizzes, trends and more!</p>
+                            <div class="input rounded-pill border px-3 py-2 d-flex justify-content-between">
+                                <span>Your email address</span>
+                                <div
+                                    class="email-arrow rounded-circle d-flex justify-content-center align-items-center border border-dark">
+                                    <span><i class="ri-arrow-right-line text-dark fs-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <p>Quick Link</p>
+                            <div class="footer-link d-flex flex-column justify-content-end">
+                                <a href="" class="text-decoration-none text-dark">Home</a>
+                                <a href="" class="text-decoration-none text-dark">Explore Quizze</a>
+                                <a href="" class="text-decoration-none text-dark">Leaderboard</a>
+                                <a href="" class="text-decoration-none text-dark">About</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/quiz.js"></script>
+
+</body>
+
+
+</html>
