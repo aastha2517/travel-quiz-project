@@ -1,0 +1,182 @@
+/* xs */
+
+@media (max-width:575px) {
+
+
+  .hero-xs-content span {
+    font-size: 13px !important;
+  }
+
+  .hero-xs-title h2 {
+    font-size: 35px !important;
+  }
+
+  .hero-xs-title p {
+    font-size: 15px !important;
+  }
+
+  .banner-xs-content h3 {
+    font-size: 20px;
+  }
+
+  .banner-xs-content p {
+    font-size: 14px;
+  }
+
+  .quizz-xs-content {
+    padding-top: 20%;
+  }
+
+  .hero-xs-img {
+    height: 140vh;
+  }
+
+  .ques-xs-box {
+    width: 17%;
+  }
+
+  /* .how-xs-img{
+    height: 155vh;
+  } */
+
+  .how-xs-content h3{
+    font-size: 50px;
+  }
+
+
+}
+
+/* s */
+
+@media (min-width:576px) {
+
+  .hero-s-content span {
+    font-size: 13px !important;
+  }
+
+  .hero-s-title h2 {
+    font-size: 40px !important;
+  }
+
+  .hero-s-title p {
+    font-size: 15px !important;
+  }
+
+  .banner-s-content h3 {
+    font-size: 19px;
+  }
+
+  .banner-s-content p {
+    font-size: 13px;
+  }
+
+  .quizz-s-content {
+    padding-top: 20%;
+  }
+
+  .hero-s-img {
+    height: 150vh;
+  }
+
+  .destination-xs-content h3 {
+    font-size: 23px;
+  }
+
+  .ques-s-box {
+    width: 17%;
+  }
+
+  .how-s-content h3{
+    font-size: 50px;
+  }
+}
+
+/* m */
+
+@media (min-width:768px) {
+
+  .hero-m-title h2 {
+    font-size: 50px !important;
+  }
+
+  .banner-m-content h3 {
+    font-size: 27px;
+  }
+
+  .banner-m-content p {
+    font-size: 16px;
+  }
+
+  .quizz-m-content {
+    padding-top: 15%;
+  }
+
+  .ques-m-box {
+    width: 45%;
+  }
+}
+
+/* l */
+
+@media (min-width:992px) {
+
+  .hero-l-content span {
+    font-size: 18px !important;
+  }
+
+  .hero-l-title h2 {
+    font-size: 60px !important;
+  }
+
+  .hero-l-title p {
+    font-size: 18px !important;
+  }
+
+  .banner-l-content h3 {
+    font-size: 27px;
+  }
+
+  .quizz-l-content {
+    padding-top: 15%;
+  }
+
+  .hero-l-img {
+    height: 120vh;
+  }
+
+  .score-l {
+    padding-top: 6%;
+  }
+
+  .ques-l-box {
+    width: 17%;
+  }
+
+  .quiz-l-completed {
+    margin-top: 50px;
+  }
+
+  
+}
+
+
+/* xl */
+
+@media (min-width:1200px) {
+  .hero-l-title p {
+    font-size: 20px !important;
+  }
+
+  .how-xl-img{
+    background-image: url(../images/how.jpg);
+    height: auto;
+  }
+}
+
+
+/* xxl */
+
+@media (min-width:1400px) {
+
+
+}

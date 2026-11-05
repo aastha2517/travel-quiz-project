@@ -3,10 +3,11 @@ const quizz = [
         "id": 1,
         "title": "Island Explorer",
         "category": "Geography",
-        "image": "./images/quiz-image-1.jpg",
+        "image": "./images/quiz-image-1.webp",
         "description": "Explore beautiful islands, oceans and natural wonders.",
         "active": true,
         "time": 120,
+        "level": "Hard",
         "questions": [
             {
                 "question": "Which is the largest island in the world?",
@@ -65,10 +66,11 @@ const quizz = [
         "id": 2,
         "title": "World Landmarks",
         "category": "Landmarks",
-        "image": "./images/quiz-image-2.jpg",
+        "image": "./images/quiz-image-2.webp",
         "description": "From iconic structures to hidden gems,explore famous places",
         "active": false,
         "time": 120,
+        "level": "Medium",
         "questions": [
             {
                 "question": "In which city is the Eiffel Tower located?",
@@ -127,10 +129,11 @@ const quizz = [
         "id": 3,
         "title": "Food Around the World",
         "category": "Culture",
-        "image": "./images/quiz-image-3.jpg",
+        "image": "./images/quiz-image-3.webp",
         "description": "Taste different cultures through their unique cuisines.",
         "active": false,
         "time": 120,
+        "level": "Easy",
         "questions": [
             {
                 "question": "Pizza originally comes from which country?",
@@ -193,6 +196,7 @@ const quizz = [
         "description": "Discover breathtaking landscapes , wildlife and natural beauty.",
         "active": false,
         "time": 120,
+        "level": "Medium",
         "questions": [
             {
                 "question": "What is the highest mountain in the world above sea level?",
@@ -255,6 +259,7 @@ const quizz = [
         "description": "Uncover the stories, traditions and heritage of the world.",
         "active": false,
         "time": 120,
+        "level": "Hard",
         "questions": [
             {
                 "question": "Who was the first Mughal emperor of India?",
@@ -312,10 +317,11 @@ const quizz = [
         "id": 6,
         "title": "Guess the Country",
         "category": "Countries",
-        "image": "./images/quiz-image-6.jpg",
+        "image": "./images/quiz-image-6.webp",
         "description": "Look at the clues and find the right country.",
         "active": false,
         "time": 120,
+        "level": "Easy",
         "questions": [
             {
                 "question": "I am home to the Eiffel Tower and the city of Paris. Which country am I?",
@@ -370,3 +376,5 @@ const quizz = [
         ]
     }
 ]
+
+
